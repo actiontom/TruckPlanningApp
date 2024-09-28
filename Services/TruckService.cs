@@ -1,5 +1,6 @@
-using TruckPlanningApp.Models;
 using MongoDB.Driver;
+using TruckPlanningApp.Models;
+using Microsoft.Extensions.Options;
 
 namespace TruckPlanningApp.Services
 {
@@ -7,11 +8,11 @@ namespace TruckPlanningApp.Services
     {
         private readonly IMongoCollection<Truck> _trucks;
 
-        public TruckService(IConfiguration config)
+        public TruckService(IOptions<TruckPlanningDatabaseSettings> truckPlanningDatabaseSettings)
         {
-            var client = new MongoClient(config.GetConnectionString("TruckPlanningAppDb"));
-            var database = client.GetDatabase("TruckPlanningDb");
-            _trucks = database.GetCollection<Truck>("Trucks");
+            var mongoClient = new MongoClient(truckPlanningDatabaseSettings.Value.ConnectionString);
+            var mongoDatabase = mongoClient.GetDatabase(truckPlanningDatabaseSettings.Value.DatabaseName);
+            _trucks = mongoDatabase.GetCollection<Truck>(truckPlanningDatabaseSettings.Value.TrucksCollectionName);
         }
 
         public List<Truck> Get() => _trucks.Find(truck => true).ToList();

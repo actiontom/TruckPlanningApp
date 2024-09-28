@@ -1,3 +1,4 @@
+using MongoDB.Bson;
 using MongoDB.Driver;
 using TruckPlanningApp.Models;
 using Microsoft.Extensions.Options;
@@ -25,8 +26,16 @@ namespace TruckPlanningApp.Services
             return truck;
         }
 
-        public void Update(string id, Truck truckIn) => _trucks.ReplaceOne(truck => truck.Id == id, truckIn);
+        public void Update(string id, Truck truckIn)
+        {
+            var objectId = new ObjectId(id);
+            _trucks.ReplaceOne(truck => truck.Id == objectId.ToString(), truckIn);
+        }
 
-        public void Remove(string id) => _trucks.DeleteOne(truck => truck.Id == id);
+        public void Remove(string id)
+        {
+            var objectId = new ObjectId(id);
+            _trucks.DeleteOne(truck => truck.Id == objectId.ToString());
+        }
     }
 }

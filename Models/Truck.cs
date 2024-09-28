@@ -7,7 +7,7 @@ namespace TruckPlanningApp.Models
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; }
+        public string? Id { get; set; }  // Make Id nullable
 
         [BsonElement("LicensePlate")]
         public string LicensePlate { get; set; }
@@ -16,6 +16,6 @@ namespace TruckPlanningApp.Models
         public string Color { get; set; }
 
         [BsonElement("DriverId")]
-        public string DriverId { get; set; } // Reference to Driver
+        public string? DriverId { get; set; }  // Make DriverId nullable if necessary
     }
 }

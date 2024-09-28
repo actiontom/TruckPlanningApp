@@ -1,0 +1,8 @@
+C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\TruckPlanningApp.csproj.AssemblyReference.cache
+C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\TruckPlanningApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\TruckPlanningApp.AssemblyInfoInputs.cache
+C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\TruckPlanningApp.AssemblyInfo.cs
+C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\TruckPlanningApp.csproj.CoreCompileInputs.cache
+C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\TruckPlanningApp.MvcApplicationPartsAssemblyInfo.cs
+C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\TruckPlanningApp.MvcApplicationPartsAssemblyInfo.cache
+C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\TruckPlanningApp.sourcelink.json

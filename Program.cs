@@ -2,6 +2,15 @@ using TruckPlanningApp.Models;
 using TruckPlanningApp.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", builder =>
+    {
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
 
 // Add services to the container.
 builder.Services.Configure<TruckPlanningDatabaseSettings>(
@@ -16,6 +25,7 @@ var app = builder.Build();
 app.UseHttpsRedirection();
 app.UseRouting();
 app.UseAuthorization();
+app.UseCors("AllowAll");
 
 app.MapControllers();
 

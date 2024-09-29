@@ -7,7 +7,7 @@ namespace TruckPlanningApp.Models
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; }
+        public string? Id { get; set; }
 
         [BsonElement("licensePlate")]
         public string LicensePlate { get; set; }
@@ -18,7 +18,6 @@ namespace TruckPlanningApp.Models
         [BsonElement("driverId")]
         public string DriverId { get; set; }
 
-        // New attributes
         [BsonElement("maxLoadCapacity")]
         public double MaxLoadCapacity { get; set; } // in kilograms
 
@@ -38,7 +37,7 @@ namespace TruckPlanningApp.Models
         public double CurrentFuelLevel { get; set; } // in liters
 
         [BsonElement("dimensions")]
-        public Dimensions Dimensions { get; set; } // Nested object for dimensions
+        public Dimensions Dimensions { get; set; }
 
         [BsonElement("registrationDate")]
         public DateTime RegistrationDate { get; set; }
@@ -56,11 +55,15 @@ namespace TruckPlanningApp.Models
         public string Location { get; set; }
     }
 
-    // Nested class for dimensions
     public class Dimensions
     {
-        public double Length { get; set; } // in meters
-        public double Width { get; set; }  // in meters
-        public double Height { get; set; } // in meters
+        [BsonElement("length")]
+        public double Length { get; set; }
+
+        [BsonElement("width")]
+        public double Width { get; set; }
+
+        [BsonElement("height")]
+        public double Height { get; set; }
     }
 }

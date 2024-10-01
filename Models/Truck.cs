@@ -10,60 +10,60 @@ namespace TruckPlanningApp.Models
         public string? Id { get; set; }
 
         [BsonElement("licensePlate")]
-        public string LicensePlate { get; set; }
+        public string? LicensePlate { get; set; }
 
         [BsonElement("color")]
-        public string Color { get; set; }
+        public string? Color { get; set; }
 
         [BsonElement("driverId")]
-        public string DriverId { get; set; }
+        public string? DriverId { get; set; }
 
         [BsonElement("maxLoadCapacity")]
-        public double MaxLoadCapacity { get; set; } // in kilograms
+        public double? MaxLoadCapacity { get; set; } // in kilograms
 
         [BsonElement("currentLoad")]
-        public double CurrentLoad { get; set; } // in kilograms
+        public double? CurrentLoad { get; set; } // in kilograms
 
         [BsonElement("truckType")]
-        public string TruckType { get; set; }
+        public string? TruckType { get; set; }
 
         [BsonElement("fuelType")]
-        public string FuelType { get; set; }
+        public string? FuelType { get; set; }
 
         [BsonElement("fuelCapacity")]
-        public double FuelCapacity { get; set; } // in liters
+        public double? FuelCapacity { get; set; } // in liters
 
         [BsonElement("currentFuelLevel")]
-        public double CurrentFuelLevel { get; set; } // in liters
+        public double? CurrentFuelLevel { get; set; } // in liters
 
         [BsonElement("dimensions")]
-        public Dimensions Dimensions { get; set; }
+        public Dimensions? Dimensions { get; set; }
 
         [BsonElement("registrationDate")]
-        public DateTime RegistrationDate { get; set; }
+        public DateTime? RegistrationDate { get; set; }
 
         [BsonElement("nextMaintenanceDate")]
-        public DateTime NextMaintenanceDate { get; set; }
+        public DateTime? NextMaintenanceDate { get; set; }
 
         [BsonElement("status")]
-        public string Status { get; set; }
+        public string? Status { get; set; }
 
         [BsonElement("odometerReading")]
-        public double OdometerReading { get; set; } // in kilometers
+        public double? OdometerReading { get; set; } // in kilometers
 
         [BsonElement("location")]
-        public string Location { get; set; }
+        public string? Location { get; set; }
     }
 
     public class Dimensions
     {
         [BsonElement("length")]
-        public double Length { get; set; }
+        public double? Length { get; set; }
 
         [BsonElement("width")]
-        public double Width { get; set; }
+        public double? Width { get; set; }
 
         [BsonElement("height")]
-        public double Height { get; set; }
+        public double? Height { get; set; }
     }
 }

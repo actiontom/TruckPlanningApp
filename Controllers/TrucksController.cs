@@ -64,9 +64,31 @@ namespace TruckPlanningApp.Controllers
                 return NotFound();
             }
 
-            _truckService.Remove(truck.Id);
+            _truckService.Remove(id);
 
             return NoContent();
         }
+
+
+        [HttpGet("available")]
+        public ActionResult<List<Truck>> GetAvailableTrucks()
+        {
+            return _truckService.GetAvailableTrucks();
+        }
+
+        [HttpPost("{truckId}/assign-driver/{driverId}")]
+        public IActionResult AssignDriverToTruck(string truckId, string driverId)
+        {
+            try
+            {
+                _truckService.AssignDriverToTruck(truckId, driverId);
+                return Ok(new { message = "Driver assigned successfully." });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
+        }
+
     }
 }

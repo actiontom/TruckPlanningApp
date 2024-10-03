@@ -15,8 +15,9 @@ namespace TruckPlanningApp.Models
         [BsonElement("color")]
         public string? Color { get; set; }
 
-        [BsonElement("driverId")]
-        public string? DriverId { get; set; }
+        // New field for assigned driver ID
+        [BsonElement("assignedDriverId")]
+        public string? AssignedDriverId { get; set; }
 
         [BsonElement("maxLoadCapacity")]
         public double? MaxLoadCapacity { get; set; } // in kilograms
@@ -46,7 +47,7 @@ namespace TruckPlanningApp.Models
         public DateTime? NextMaintenanceDate { get; set; }
 
         [BsonElement("status")]
-        public string? Status { get; set; }
+        public string? Status { get; set; } // e.g., "Available", "Assigned", etc.
 
         [BsonElement("odometerReading")]
         public double? OdometerReading { get; set; } // in kilometers

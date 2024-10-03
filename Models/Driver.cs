@@ -8,23 +8,26 @@ namespace TruckPlanningApp.Models
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-        public string? Id { get; set; } // Nullable string
+        public string? Id { get; set; }
 
-        [BsonElement("Name")]
-        public string? Name { get; set; } // Nullable string
+        [BsonElement("name")]
+        public string? Name { get; set; }
 
-        [BsonElement("LicenseNumber")]
-        public string? LicenseNumber { get; set; } // Nullable string
+        [BsonElement("licenseNumber")]
+        public string? LicenseNumber { get; set; }
 
-        [BsonElement("PhoneNumber")]
-        public string? PhoneNumber { get; set; } // Nullable string
+        [BsonElement("phoneNumber")]
+        public string? PhoneNumber { get; set; }
 
-        [BsonElement("DateOfBirth")]
-        public DateTime? DateOfBirth { get; set; } // Nullable DateTime
+        [BsonElement("dateOfBirth")]
+        public string? DateOfBirth { get; set; }
 
-        [BsonElement("AssignedTruckId")]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string? AssignedTruckId { get; set; } // Nullable string (ObjectId reference)
+        [BsonElement("assignedTruckId")]
+        public string? AssignedTruckId { get; set; }
+
+        [BsonElement("status")]
+        public string? Status { get; set; }
     }
+
 
 }

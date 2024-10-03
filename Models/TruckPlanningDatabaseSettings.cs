@@ -5,5 +5,6 @@ namespace TruckPlanningApp.Models
         public string ConnectionString { get; set; } = null!;
         public string DatabaseName { get; set; } = null!;
         public string TrucksCollectionName { get; set; } = null!;
+        public string DriversCollectionName { get; set; } = null!;
     }
 }

@@ -2,6 +2,8 @@ using TruckPlanningApp.Models;
 using TruckPlanningApp.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Add CORS policy
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", builder =>
@@ -23,9 +25,13 @@ builder.Services.AddControllers();
 var app = builder.Build();
 
 app.UseHttpsRedirection();
+
 app.UseRouting();
-app.UseAuthorization();
+
+// Apply CORS policy before authorization
 app.UseCors("AllowAll");
+
+app.UseAuthorization();
 
 app.MapControllers();
 

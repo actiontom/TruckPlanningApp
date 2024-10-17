@@ -1,5 +1,5 @@
-TruckPlanningApp
-Overview
+TruckPlanningApp Overview
+
 The TruckPlanningApp is a C# application built with ASP.NET Core and MongoDB. It serves as the backend for a truck and driver management system, providing APIs to manage trucks, drivers, and their assignments.
 
 Features

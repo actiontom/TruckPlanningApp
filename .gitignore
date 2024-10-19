@@ -9,23 +9,21 @@
 *.sln.docstates
 
 # User-specific folders
-.vscode/
+# .vscode/
 .vs/
 _ReSharper.Caches
 .idea/
 
 # Build results
+[Bb]in/
+[Oo]bj/
 [Dd]ebug/
-[Dd]ebugPublic/
 [Rr]elease/
-[Rr]eleases/
 x64/
 x86/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 bld/
-[Bb]in/
-[Oo]bj/
 [Ll]og/
 
 # .NET Core
@@ -51,8 +49,8 @@ Desktop.ini
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
-# VS Code directories
-.vscode/
+# VS Code directories (if using workspace settings)
+# .vscode/
 
 # Other extensions and folders
 *.tlog
@@ -75,10 +73,10 @@ wwwroot/lib/
 node_modules/
 
 # Docker files
-**/Dockerfile
-**/docker-compose*
+Dockerfile
+docker-compose*
 
-# Publish
+# Publish files
 *.publish
 
 # ASP.NET Scaffolding
@@ -90,6 +88,7 @@ Migrations/
 # Configuration files (optional, if you want to protect sensitive data)
 appsettings.Development.json
 appsettings.Local.json
+appsettings.Production.json
 
 # Rider and JetBrains
 .idea/

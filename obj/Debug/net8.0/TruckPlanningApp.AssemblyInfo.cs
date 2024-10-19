@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TruckPlanningApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a888d21f2d982f2b3d0886156272ad0c61673a2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de0b552edd80bf2868e6940230339393c86a9a91")]
 [assembly: System.Reflection.AssemblyProductAttribute("TruckPlanningApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TruckPlanningApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,13 +1,7 @@
-C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\TruckPlanningApp.csproj.AssemblyReference.cache
-C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\TruckPlanningApp.GeneratedMSBuildEditorConfig.editorconfig
-C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\TruckPlanningApp.AssemblyInfoInputs.cache
-C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\TruckPlanningApp.AssemblyInfo.cs
-C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\TruckPlanningApp.csproj.CoreCompileInputs.cache
-C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\TruckPlanningApp.MvcApplicationPartsAssemblyInfo.cs
-C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\TruckPlanningApp.MvcApplicationPartsAssemblyInfo.cache
-C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\TruckPlanningApp.sourcelink.json
 C:\code\Projects\TruckPlanningApp\bin\Debug\net8.0\appsettings.Development.json
+C:\code\Projects\TruckPlanningApp\bin\Debug\net8.0\appsettings.Docker.json
 C:\code\Projects\TruckPlanningApp\bin\Debug\net8.0\appsettings.json
+C:\code\Projects\TruckPlanningApp\bin\Debug\net8.0\launchSettings.json
 C:\code\Projects\TruckPlanningApp\bin\Debug\net8.0\TruckPlanningApp.exe
 C:\code\Projects\TruckPlanningApp\bin\Debug\net8.0\TruckPlanningApp.deps.json
 C:\code\Projects\TruckPlanningApp\bin\Debug\net8.0\TruckPlanningApp.runtimeconfig.json
@@ -31,6 +25,14 @@ C:\code\Projects\TruckPlanningApp\bin\Debug\net8.0\ZstdSharp.dll
 C:\code\Projects\TruckPlanningApp\bin\Debug\net8.0\runtimes\linux\native\libmongocrypt.so
 C:\code\Projects\TruckPlanningApp\bin\Debug\net8.0\runtimes\osx\native\libmongocrypt.dylib
 C:\code\Projects\TruckPlanningApp\bin\Debug\net8.0\runtimes\win\native\mongocrypt.dll
+C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\TruckPlanningApp.csproj.AssemblyReference.cache
+C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\TruckPlanningApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\TruckPlanningApp.AssemblyInfoInputs.cache
+C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\TruckPlanningApp.AssemblyInfo.cs
+C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\TruckPlanningApp.csproj.CoreCompileInputs.cache
+C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\TruckPlanningApp.MvcApplicationPartsAssemblyInfo.cs
+C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\TruckPlanningApp.MvcApplicationPartsAssemblyInfo.cache
+C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\TruckPlanningApp.sourcelink.json
 C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\staticwebassets.build.json
 C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\staticwebassets.development.json
 C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\staticwebassets\msbuild.TruckPlanningApp.Microsoft.AspNetCore.StaticWebAssets.props
@@ -45,5 +47,3 @@ C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\refint\TruckPlanningApp.dll
 C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\TruckPlanningApp.pdb
 C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\TruckPlanningApp.genruntimeconfig.cache
 C:\code\Projects\TruckPlanningApp\obj\Debug\net8.0\ref\TruckPlanningApp.dll
-C:\code\Projects\TruckPlanningApp\bin\Debug\net8.0\appsettings.Docker.json
-C:\code\Projects\TruckPlanningApp\bin\Debug\net8.0\launchSettings.json
